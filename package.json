@@ -1,23 +1,29 @@
 {
   "name": "terminal-dotenv",
-  "displayName": "terminal-dotenv",
-  "description": "add .env variables to terminal sessions",
-  "version": "0.0.1",
+  "displayName": "Terminal.env",
+  "description": "Laods .env variables to terminal session",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.71.0"
   },
   "categories": [
     "Other"
   ],
+  "icon": "images/icon.png",
+  "keywords":[
+    "terminal",
+    "dotenv",
+    ".env"
+  ],
   "activationEvents": [
-    "onCommand:terminal-dotenv.helloWorld"
+    "onCommand:terminal-dotenv.createTerminal"
   ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "terminal-dotenv.helloWorld",
-        "title": "Hello World"
+        "command": "terminal-dotenv.createTerminal",
+        "title": "Terminal.env: Create Terminal w/ .env"
       }
     ]
   },
@@ -33,19 +39,28 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.71.0",
     "@types/glob": "^7.2.0",
     "@types/mocha": "^9.1.1",
     "@types/node": "16.x",
+    "@types/vscode": "^1.71.0",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
+    "@vscode/test-electron": "^2.1.5",
     "eslint": "^8.20.0",
     "glob": "^8.0.3",
     "mocha": "^10.0.0",
-    "typescript": "^4.7.4",
     "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "@vscode/test-electron": "^2.1.5"
-  }
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HaidarZ/vscode-terminal-dotenv.git"
+  },
+  "homepage": "https://github.com/HaidarZ/vscode-terminal-dotenv/blob/main/README.md"
 }
