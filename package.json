@@ -3,6 +3,7 @@
   "displayName": "Terminal.env",
   "description": "Laods .env variables to terminal session",
   "version": "1.0.0",
+  "publisher":"hzeineddine",
   "engines": {
     "vscode": "^1.71.0"
   },
