@@ -8,7 +8,7 @@ Visual Studio Code allows you to define environment variables inside the `.env` 
 Here comes the role of `Terminal.env`, it allows you to open a new terminal session loading the environment variables that you've defined in the `.env` file. 
 
 ## How it works
-Simply open the Command Palette and type down `Terminal.env` and press enter...
+Simply open the Command Palette (Ctrl+Shift+P) and type down `Terminal.env` and press enter. A new terminal will be opened having .env variables loaded.
 
 ## Known Issues
 Nothing so far
